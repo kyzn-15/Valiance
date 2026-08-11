@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- META TAG -->
-    <meta name="description" content="Official Website for OSIS SMA IGS" />
-    <meta
-      name="robots"
-      content="OSIS, Credence, Asteration, Valiance, OSIS Website, Ignatius Global School, OSIS IGS, OSIS SMA IGS, OSIS Ignatius Global School, Web Osis IGS, Website OSIS IGS, Web OSIS Igantius Global School, Website OSIS Ignatius Global School"
-    />
-    <meta name="googlebot" content="Official Website for OSIS SMA IGS" />
+    <meta name="description" content="{{ self.title() | striptags | trim }} - official Valiance, OSIS SMA IGS website." />
+    <meta name="robots" content="{% block robots %}index, follow{% endblock robots %}" />
+    <link rel="canonical" href="https://valiance.osissmaigs.com{{ request.path }}" />
     <meta name="googlebot" content="notranslate" />
 
     <!-- Fonts -->

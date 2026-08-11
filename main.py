@@ -78,22 +78,22 @@ def e_ignatius():
 
 @app.route("/Events/IgnatiusDay/Cooking")
 def l_cooking():
-    return render_template("valiance/lomba_ignatius/l_cooking.html")
+    return render_template("valiance/l_closed.html")
 
 
 @app.route("/Events/IgnatiusDay/Dont_Step_On_The_Paper")
 def l_dont_step():
-    return render_template("valiance/lomba_ignatius/l_dont_step.html")
+    return render_template("valiance/l_closed.html")
 
 
 @app.route("/Events/IgnatiusDay/Whisper")
 def l_whisper():
-    return render_template("valiance/lomba_ignatius/l_whisper.html")
+    return render_template("valiance/l_closed.html")
 
 
 @app.route("/Events/IgnatiusDay/Move_The_Cup")
 def l_blow_the_cup():
-    return render_template("valiance/lomba_ignatius/l_blow_the_cup.html")
+    return render_template("valiance/l_closed.html")
 
 
 @app.route("/Events/Questival")
@@ -116,6 +116,10 @@ def coming_soon():
 @app.route("/About_Us")
 def about_us():
     return render_template("valiance/about_us.html")
+
+@app.route("/About_Us.md")
+def about_us_markdown():
+    return render_template("valiance/about_us.md"), 200, {"Content-Type": "text/markdown; charset=utf-8"}
 
 @app.route("/Magazine")
 def magazine():
